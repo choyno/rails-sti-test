@@ -24,7 +24,7 @@
     <%= f.password_field :password_confirmation %>
   </p>
   
-  <%= fields_for :info do |info| %>
+  <%= f.fields_for :info do |info| %>
     <p>
       <%= info.label :office %><br />
       <%= info.text_field :office  %>

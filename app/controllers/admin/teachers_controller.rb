@@ -6,7 +6,9 @@ class Admin::TeachersController < ApplicationController
   
   def new
     @teacher = Teacher.new
+    @teacher.build_info
   end
+  
   
   def create
     @teacher = Teacher.new(params[:teacher])

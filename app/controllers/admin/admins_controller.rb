@@ -6,6 +6,7 @@ class Admin::AdminsController < ApplicationController
   
   def new
     @admin = Admin.new
+    @admin.build_info
   end
   
   def create

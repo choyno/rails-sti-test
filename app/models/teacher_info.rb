@@ -1,6 +1,6 @@
 class TeacherInfo < ActiveRecord::Base
-  attr_accessible :office, :user_id
   
-  belongs_to :office
+  attr_accessible :office
+  belongs_to :teacher
   
 end
